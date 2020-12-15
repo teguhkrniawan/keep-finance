@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".FormTransaksiActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jenis_finansial"
+        android:fontFamily="@font/futura_bold"
+        android:textSize="15sp"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group_transaksi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/income"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expense"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jenis_kategori"
+        android:fontFamily="@font/futura_bold"
+        android:textSize="15sp"/>
+
+    <Spinner
+        android:id="@+id/form_transaksi_spinner"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F2F2F2"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Nominal"
+        android:fontFamily="@font/futura_bold"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/form_transaksi_nominal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:hint="@string/_50000"
+        android:fontFamily="@font/futura_bold"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keterangan Transaksi"
+        android:fontFamily="@font/futura_bold"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/form_transaksi_keterangan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Membeli Laptop Gaming"
+        android:fontFamily="@font/futura_bold"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal"
+        android:fontFamily="@font/futura_bold"
+        android:textSize="15sp"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:weightSum="3"
+       android:orientation="horizontal">
+
+       <EditText
+           android:id="@+id/form_transaksi_tanggal"
+           android:layout_width="0dp"
+           android:layout_height="50dp"
+           android:layout_weight="2"
+           android:hint="2020-10-11"
+           android:fontFamily="@font/futura_bold"/>
+
+       <Button
+           android:id="@+id/form_transaksi_pilih_tanggal"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="10dp"
+           android:layout_weight="1"
+           android:textSize="13sp"
+           android:fontFamily="@font/futura_bold"
+           android:textAllCaps="false"
+           android:background="@color/colorPrimary"
+           android:text="Pilih Tanggal"/>
+
+   </LinearLayout>
+
+    <Button
+        android:id="@+id/form_transaksi_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/simpan"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_gravity="bottom"/>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Keep Finance</string>
+    <string name="total">Total Keuntungan</string>
+    <string name="rp_1_250_000">Rp 1.250.000</string>
+    <string name="nama_kategori">Nama Kategori</string>
+    <string name="pembayaran_listrik">Pembayaran Listrik</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="perbarui">Update</string>
+    <string name="jenis_finansial">Jenis Finansial</string>
+    <string name="_50000">50000</string>
+    <string name="simpan">Simpan</string>
+    <string name="jenis_kategori">Jenis Kategori</string>
+</resources>
